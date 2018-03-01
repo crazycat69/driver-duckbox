@@ -915,7 +915,6 @@ INT32 nim_panic6158_get_lock(struct nim_device *dev, UINT8 *lock)
 		if (8 <= (0x0F & data))
 			*lock = 1;
 	}
-	NIM_PANIC6158_PRINTF("data = %x\n", data & 0xf);
 	return SUCCESS;
 }
 
